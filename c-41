@@ -1,0 +1,32 @@
+     // store array element  return value of(x)=x*x+1
+
+#include<stdio.h>
+int fun(int);
+int main(){
+int size, ie, sum=0;
+printf("Enter the no of element of array--\n");
+scanf("%d", &size);
+int arr[size];
+// INPUT ARRAY ELEMENT
+for(i=0;i<size;i++){
+Programming Questions
+int z=fun(i);
+arr[i]=z;
+}
+printf("[");
+ //print array element
+for(i=0;i<size;i++){
+printf("%d ",arr[i]);
+}
+printf("]");
+
+//sum of all element
+  for(i=0;i<size;i++){
+sum=sum+arr[1];
+  }
+printf(" total sum of all element %d", sum);
+}
+int fun(int x)
+{
+return x*x+1;
+}
